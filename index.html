@@ -32,12 +32,16 @@
 		.navigation a{
 			font-weight: bold;
 		}
+		.navigation a:hover{
+			background-color: lightblue;
+		}
 
 		.aside{
 			float: left;
 			background-color: #2982cf ; 
 			text-align: center;
 			height: 1500px;
+			width: 20%;
 			padding-top: 120px;
 			border-right-style:solid ;
 			border-right-width:2px;
@@ -66,7 +70,7 @@
 
 		.hobbies_card{
 			width: 230px;
-			height: 200px; 
+			height: 180px; 
 			background-color: #333; 
 			text-align: center;
 			color: white;
@@ -75,9 +79,12 @@
 		}
 		.Hobbies img{
 			width:100%; 
-			height:200px;	
+			height:180px;	
 		}
 
+		.education_qualification{
+			display: inline-block;
+		}
 		.education{			
 			width: 500px;
 			height:150px;
@@ -121,21 +128,21 @@
       		<nav class="navigation">
       			<a href="#">Home</a>
       			<a href="#">About</a>
-      			<a href="#">Skills</a>
-      			<a href="#">Hobbies</a>
-      			<a href="#">Education Qualification</a>
-      			<a href="#">Map</a>
+      			<a href="#skill">Skills</a>
+      			<a href="#hobby">Hobbies</a>
+      			<a href="#educate">Education Qualification</a>
+      			<a href="#location">Map</a>
       		</nav>
       	</header>
 
-      	<div class="aside">
+      	<div class="aside">      		
       		<img src="Pimage/shiv.jpg" width="100%" height="300">
       		<h3>Personal Details:</h3>
       		<h3>Shiv Narayan Rawat</h3>
       		<h3>Contact: +91-9713934392</h3>
       		<h3>Nationality: Indian</h3>
       		<h3>Gender: Male</h3>
-      		<h3>Status: Single</h3>  	      		
+      		<h3>Status: Single</h3> 	      		
       	</div>
 		
 
@@ -148,11 +155,11 @@
       		<hr />
 
       		<h2>Skills</h2>
-      		<div class="skills">      			
+      		<div class="skills" id="skill">      			
                 <img src="Pimage/html.png" alt="html"/>
                 <img src="Pimage/css.png" alt="css" />
                 <img src="Pimage/javascript.png" alt="javascript" />
-                <img src="Pimage/c++.png" alt="c++"/>
+                <img src="Pimage/C++.png" alt="c++"/>
                 <img src="Pimage/java.png" alt="java" />             
                 <img src="Pimage/python.jpg" alt="python"/>
       		</div>
@@ -160,7 +167,7 @@
       		<hr />
 
       		<h2>Hobbies</h2>
-      		<div class="Hobbies">	
+      		<div class="Hobbies" id="hobby">	
       			<div class="hobbies_card">
       				<h3>Sports</h3>
       				<img src="Pimage/sports.jpg" alt="sports">
@@ -182,7 +189,7 @@
       		<hr />
 
       		<h2>Education Qualification</h2>
-      		<div class="education_qualification">
+      		<div class="education_qualification" id="educate">
 				<div class="education">
 				<img src="Pimage/msc.jpg" alt="M.Sc. logo" >
 				<p>I had completed my Master of Science in Information Technology degree in 2021 from <i>"Government Nagarjuna P.G. College of Science, Raipur, Chhattisgarh".</i></p>
@@ -194,9 +201,9 @@
 				</div>				
 			</div>
       			     		      		      		     		
-      		
+      		<hr />
 
-      		<div class="map">
+      		<div class="map" id="location">
       			<h2>Current Location</h2>
       			<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3718.0383123757606!2d81.59206731424962!3d21.269950984878026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjHCsDE2JzExLjgiTiA4McKwMzUnMzkuMyJF!5e0!3m2!1sen!2sin!4v1676963550546!5m2!1sen!2sin" width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       		</div>
@@ -205,10 +212,10 @@
 
 
       	<footer class="footer">
-      	   <a href="sample.html"><img src="Pimage/facebook.png" alt="facebook_icon" /></a>
-      		<a href="sample.html"><img src="Pimage/twitter.png" alt="twitter_icon"  /></a>
-      		<a href="https://instagram.com/shivnsrawat"><img src="Pimage/insta.jpg" alt="instagram_icon" /></a>
-      		<a href="sample.html"><img src="Pimage/youtube.png" alt="youtube_icon" /></a>
+      	   <a href="sample.html" target="_blank"><img src="Pimage/facebook.png" alt="facebook_icon" /></a>
+      		<a href="sample.html" target="_blank"><img src="Pimage/twitter.png" alt="twitter_icon"  /></a>
+      		<a href="https://instagram.com/shivnsrawat" target="_blank"><img src="Pimage/insta.jpg" alt="instagram_icon" /></a>
+      		<a href="sample.html" target="_blank"><img src="Pimage/youtube.png" alt="youtube_icon" /></a>
       		<p><b>Contact/What'sapp: +91-9713934392</b></p>      		      		
       		<p><b>&copy Copyright By Shiv Narayan Rawat</b></p>
       	</footer>
